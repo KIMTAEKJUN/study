@@ -1,3 +1,5 @@
+> 패스트캠퍼스의 한 번에 끝내는 Spring 강의에서 Spring Data JPA 파트를 보고 정리합니다.
+
 ## Spring Data JPA
 ### 시작 전 정확한 개념 알기 (ORM, JPA, JPQL)
 ### 1. ORM (Object-Relational Mapping)
@@ -61,5 +63,3 @@ WHERE p.name = 'zzz'
 - JPA 프레임워크를 사용한다면
   - 특별한 요구사항이 있지 않은 한, JPQL 을 몰라도 된다
   - JPQL을 직접 코드에서 사용하고 있다면, 반드시 필요했던 일인지 검토하기
-
-> 패스트캠퍼스의 한 번에 끝내는 Spring 강의에서 Spring Data JPA 파트를 보고 정리합니다. 
