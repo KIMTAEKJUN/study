@@ -31,6 +31,7 @@
 
 - `NS Record (NameServer Record)`:
     - 도메인의 권한 있는 네임 서버를 지정함. (도메인의 DNS 정보 관리 서버 설정)
-        - 예) `example.com` → ns1.dnsprovider.com
+        - 예) `example.com` → `ns1.dnsprovider.com`
         - DNS 쿼리 시 이 레코드를 참조하여 해당 도메인의 DNS 정보를 관리하는 서버를 찾음.
         - 일반적으로 최소 2개의 NS 레코드를 설정하여 redundancy를 확보함.
+            - `redundancy`: 시스템의 안정성과 가용성을 높이기 위해 중복성을 제공하는 개념
