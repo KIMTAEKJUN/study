@@ -15,10 +15,10 @@
 
 - **`curl -v [옵션] [URL]`**:
     - **주요 옵션**:
-        - `-v`: 상세한 정보 출력 (요청/응답 헤더 포함)
-        - `-i`: 응답 헤더를 포함한 전체 HTTP 응답 출력
-        - `-X [메소드]`: HTTP 메소드 지정 (GET, POST 등)
-        - `-d "[데이터]"`: POST 데이터 지정
+        - **`-v`**: 상세한 정보 출력 (요청/응답 헤더 포함)
+        - **`-i`**: 응답 헤더를 포함한 전체 HTTP 응답 출력
+        - **`-X [메소드]`**: HTTP 메소드 지정 (GET, POST 등)
+        - **`-d "[데이터]"`**: POST 데이터 지정
     - **예시**:
         - GET 요청: **`curl https://example.com`**
         - 상세 정보 출력: **`curl -v https://example.com`**
@@ -139,12 +139,31 @@
 
 - **`grep [옵션] [패턴] [파일]`**:
   - 파일 내용에서 특정 패턴을 검색함.
-    - example.txt 파일에서 "error" 문자열을 포함한 줄을 출력
-      - 예) `grep "error" example.txt`
-    - 현재 디렉토리와 하위 디렉토리의 모든 파일에서 "TODO" 문자열을 검색
-      - 예) `grep -r "TODO" .`
-    - 대소문자를 구분하지 않고 "warning" 문자열을 검색
-	    - 예) `grep -i "warning" log.txt`
+    - **소스코드 내 특정 문자열 찾기**:
+      - 현재 디렉토리의 모든 .js파일에서 'import' 문 찾기
+        - 예) `grep "import" *.js`
+      - 하위 디렉토리를 포함한 모든 .js 파일에서 'import' 찾기
+        - 예) `grep -r "import" *.js`
+      - 대소문자 구분 없이 'error' 문자열 찾기
+        - 예) `grep -i "error" *.js`
+
+
+  - **다른 명령어와 리다이렉트 되어 출력 필터링하기**:
+    - 실행 중인 프로세스 중 'mysql'이 포함된 것만 표시
+      - 예) `ps aux | grep mysql`
+    - 디렉토리 내용 중 '.json' 파일만 표시
+      - 예) `ls -l | grep '.json'`
+    - 'error'가 포함된 줄만 실시간으로 표시
+      - 예) `tail -f [directory] | grep error`
+
+
+  - **주요 옵션**:
+    - **`-i`**: 대소문자 구분 없이 검색
+      - 예) `grep -i "error" *.js`
+    - **`-r`** 또는 **`-R`**: 하위 디렉토리를 재귀적으로 검색
+      - 예) `grep -r "import" *.js`
+    - **`-n`**: 매칭된 줄의 번호도 함께 표시
+      - 예) `grep -n "function" *.js`
 
 
 - **`chmod [옵션] [모드] [파일]`**:
