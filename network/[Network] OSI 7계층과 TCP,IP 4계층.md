@@ -100,6 +100,6 @@
 
 ## 참고한 자료
 
-[1. [CS] OSI 7계층 파헤치기 / OSI 7계층이란 / 계층별 역할, 기능](https://mundol-colynn.tistory.com/167)
-[2. TCP/IP 4계층 모델 - 핵심 총정리](https://inpa.tistory.com/entry/WEB-%F0%9F%8C%90-TCP-IP-%EC%A0%95%EB%A6%AC-%F0%9F%91%AB%F0%9F%8F%BD-TCP-IP-4%EA%B3%84%EC%B8%B5)
+[1. [CS] OSI 7계층 파헤치기 / OSI 7계층이란 / 계층별 역할, 기능](https://mundol-colynn.tistory.com/167)  
+[2. TCP/IP 4계층 모델 - 핵심 총정리](https://inpa.tistory.com/entry/WEB-%F0%9F%8C%90-TCP-IP-%EC%A0%95%EB%A6%AC-%F0%9F%91%AB%F0%9F%8F%BD-TCP-IP-4%EA%B3%84%EC%B8%B5)  
 [3. [ WEB ] 인캡슐레이션(Encapsulation), 디캡슐레이션(Decapsulation)](https://mihee0703.tistory.com/29)
